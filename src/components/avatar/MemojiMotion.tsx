@@ -118,7 +118,7 @@ export function MemojiMotion() {
         aria-hidden="true"
       />
 
-      <div className="relative aspect-square w-full max-w-[430px] overflow-hidden rounded-[32px] border border-border bg-gradient-to-b from-white to-secondary-bg p-5 shadow-[0_18px_60px_rgba(17,19,24,0.06)]">
+      <div className="relative aspect-square w-full max-w-[430px] overflow-hidden rounded-[32px] border border-border bg-gradient-to-b from-white to-surface p-5 shadow-[0_18px_60px_rgba(17,19,24,0.06)]">
         <div className="relative flex h-full items-center justify-center overflow-hidden rounded-[24px] border border-white bg-[radial-gradient(circle_at_50%_45%,rgba(108,92,231,0.13),transparent_58%)]">
           <div ref={dotsRef} className="absolute inset-0 will-change-transform" aria-hidden="true">
             <span className="absolute left-[14%] top-[20%] size-2 rounded-full bg-accent/25" />
