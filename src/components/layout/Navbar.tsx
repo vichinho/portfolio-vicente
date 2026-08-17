@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { NAV_ITEMS, SITE_CONFIG } from "@/lib/constants";
+import { NAV_ITEMS } from "@/lib/constants";
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
@@ -33,12 +33,12 @@ export function Navbar() {
         </nav>
 
         <div className="hidden lg:block">
-          <a
-            href="/cv/Vicente-Carrasco-CV.pdf"
-            className="inline-flex h-10 items-center justify-center rounded-[10px] border border-border bg-white px-4 text-sm font-semibold transition-all hover:-translate-y-0.5 hover:border-accent/40 hover:shadow-sm"
+          <span
+            className="inline-flex h-10 cursor-not-allowed items-center justify-center rounded-[10px] border border-border bg-white px-4 text-sm font-semibold text-muted opacity-70"
+            title="Pendiente de agregar el archivo CV"
           >
             Descargar CV
-          </a>
+          </span>
         </div>
 
         <button
@@ -85,13 +85,12 @@ export function Navbar() {
               {item.label}
             </a>
           ))}
-          <a
-            href="/cv/Vicente-Carrasco-CV.pdf"
-            onClick={closeMenu}
-            className="mt-4 inline-flex h-11 items-center justify-center rounded-[10px] bg-accent px-4 text-sm font-semibold text-white"
+          <span
+            className="mt-4 inline-flex h-11 cursor-not-allowed items-center justify-center rounded-[10px] bg-accent/55 px-4 text-sm font-semibold text-white"
+            title="Pendiente de agregar el archivo CV"
           >
             Descargar CV
-          </a>
+          </span>
         </nav>
       </div>
     </header>
