@@ -71,6 +71,21 @@ a {
   letter-spacing: 0.02em;
 }
 
+@keyframes memojiIdle {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  35% {
+    transform: translate3d(0, -4px, 0);
+  }
+
+  70% {
+    transform: translate3d(0, 2px, 0);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
